@@ -82,19 +82,18 @@ hash_macro
 ### Verilog Module Hierarchy
 
 ```
-decred_top.v
+user_project_wrapper.v
    |
-    - clock_div.v
-   |
-    - decred.v
+    - decred_controller.v
+         |
+          - clock_div.v
          |
           - addressalyzer.v
          |
           - spi_*.v
          |
           - register_bank.v
-               |
-                - hash_macro_nonblock.v
+    - decred_hash_macro.v
 ```
 
 ## Building

@@ -99,7 +99,7 @@ decred_top.v
 
 ## Building
 Follow the steps at https://github.com/efabless/openlane#quick-start. 
-Note that as of the time of this writing, openlane mpw-one-a was the current release branch for the shuttle (i.e., git clone https://github.com/efabless/openlane.git --branch mpw-one-a).
+Note that as of the time of this writing, openlane mpw-one-b was the current release branch for the shuttle (i.e., git clone https://github.com/efabless/openlane.git --branch mpw-one-b).
 
 After ```make test``` succeeds, proceed to check out step next.
 

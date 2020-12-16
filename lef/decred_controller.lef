@@ -9,6 +9,7 @@ MACRO decred_controller
   SIZE 200.000 BY 200.000 ;
   PIN CLK_LED
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 16.650 196.000 16.930 200.000 ;
@@ -16,6 +17,7 @@ MACRO decred_controller
   END CLK_LED
   PIN DATA_AVAILABLE[0]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 109.570 196.000 109.850 200.000 ;
@@ -23,6 +25,7 @@ MACRO decred_controller
   END DATA_AVAILABLE[0]
   PIN DATA_AVAILABLE[1]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 88.410 196.000 88.690 200.000 ;
@@ -30,6 +33,7 @@ MACRO decred_controller
   END DATA_AVAILABLE[1]
   PIN DATA_AVAILABLE[2]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0.000 63.960 4.000 64.560 ;
@@ -37,6 +41,7 @@ MACRO decred_controller
   END DATA_AVAILABLE[2]
   PIN DATA_AVAILABLE[3]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 171.210 196.000 171.490 200.000 ;
@@ -44,6 +49,7 @@ MACRO decred_controller
   END DATA_AVAILABLE[3]
   PIN DATA_FROM_HASH[0]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 94.850 0.000 95.130 4.000 ;
@@ -51,6 +57,7 @@ MACRO decred_controller
   END DATA_FROM_HASH[0]
   PIN DATA_FROM_HASH[1]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 115.090 0.000 115.370 4.000 ;
@@ -58,6 +65,7 @@ MACRO decred_controller
   END DATA_FROM_HASH[1]
   PIN DATA_FROM_HASH[2]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 150.050 196.000 150.330 200.000 ;
@@ -65,6 +73,7 @@ MACRO decred_controller
   END DATA_FROM_HASH[2]
   PIN DATA_FROM_HASH[3]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 26.770 196.000 27.050 200.000 ;
@@ -72,6 +81,7 @@ MACRO decred_controller
   END DATA_FROM_HASH[3]
   PIN DATA_FROM_HASH[4]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0.000 95.240 4.000 95.840 ;
@@ -79,6 +89,7 @@ MACRO decred_controller
   END DATA_FROM_HASH[4]
   PIN DATA_FROM_HASH[5]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 196.000 50.360 200.000 50.960 ;
@@ -86,6 +97,7 @@ MACRO decred_controller
   END DATA_FROM_HASH[5]
   PIN DATA_FROM_HASH[6]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 78.290 196.000 78.570 200.000 ;
@@ -93,6 +105,7 @@ MACRO decred_controller
   END DATA_FROM_HASH[6]
   PIN DATA_FROM_HASH[7]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 126.130 0.000 126.410 4.000 ;
@@ -100,6 +113,7 @@ MACRO decred_controller
   END DATA_FROM_HASH[7]
   PIN DATA_TO_HASH[0]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0.000 140.120 4.000 140.720 ;
@@ -107,6 +121,7 @@ MACRO decred_controller
   END DATA_TO_HASH[0]
   PIN DATA_TO_HASH[1]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 181.330 196.000 181.610 200.000 ;
@@ -114,6 +129,7 @@ MACRO decred_controller
   END DATA_TO_HASH[1]
   PIN DATA_TO_HASH[2]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 23.090 0.000 23.370 4.000 ;
@@ -121,6 +137,7 @@ MACRO decred_controller
   END DATA_TO_HASH[2]
   PIN DATA_TO_HASH[3]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 176.730 0.000 177.010 4.000 ;
@@ -128,6 +145,7 @@ MACRO decred_controller
   END DATA_TO_HASH[3]
   PIN DATA_TO_HASH[4]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 36.890 196.000 37.170 200.000 ;
@@ -135,6 +153,7 @@ MACRO decred_controller
   END DATA_TO_HASH[4]
   PIN DATA_TO_HASH[5]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 196.000 5.480 200.000 6.080 ;
@@ -142,6 +161,7 @@ MACRO decred_controller
   END DATA_TO_HASH[5]
   PIN DATA_TO_HASH[6]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 196.000 96.600 200.000 97.200 ;
@@ -149,6 +169,7 @@ MACRO decred_controller
   END DATA_TO_HASH[6]
   PIN DATA_TO_HASH[7]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 166.610 0.000 166.890 4.000 ;
@@ -156,6 +177,7 @@ MACRO decred_controller
   END DATA_TO_HASH[7]
   PIN EXT_RESET_N_fromHost
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 119.690 196.000 119.970 200.000 ;
@@ -163,6 +185,7 @@ MACRO decred_controller
   END EXT_RESET_N_fromHost
   PIN EXT_RESET_N_toClient
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0.000 155.080 4.000 155.680 ;
@@ -170,6 +193,7 @@ MACRO decred_controller
   END EXT_RESET_N_toClient
   PIN HASH_ADDR[0]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 156.490 0.000 156.770 4.000 ;
@@ -177,6 +201,7 @@ MACRO decred_controller
   END HASH_ADDR[0]
   PIN HASH_ADDR[1]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 160.170 196.000 160.450 200.000 ;
@@ -184,6 +209,7 @@ MACRO decred_controller
   END HASH_ADDR[1]
   PIN HASH_ADDR[2]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 53.450 0.000 53.730 4.000 ;
@@ -191,6 +217,7 @@ MACRO decred_controller
   END HASH_ADDR[2]
   PIN HASH_ADDR[3]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 139.930 196.000 140.210 200.000 ;
@@ -198,6 +225,7 @@ MACRO decred_controller
   END HASH_ADDR[3]
   PIN HASH_ADDR[4]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0.000 34.040 4.000 34.640 ;
@@ -205,6 +233,7 @@ MACRO decred_controller
   END HASH_ADDR[4]
   PIN HASH_ADDR[5]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0.000 49.000 4.000 49.600 ;
@@ -212,6 +241,7 @@ MACRO decred_controller
   END HASH_ADDR[5]
   PIN HASH_EN
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 68.170 196.000 68.450 200.000 ;
@@ -219,6 +249,7 @@ MACRO decred_controller
   END HASH_EN
   PIN HASH_LED
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0.000 78.920 4.000 79.520 ;
@@ -226,6 +257,7 @@ MACRO decred_controller
   END HASH_LED
   PIN ID_fromClient
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 196.000 66.680 200.000 67.280 ;
@@ -233,6 +265,7 @@ MACRO decred_controller
   END ID_fromClient
   PIN ID_toHost
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0.000 170.040 4.000 170.640 ;
@@ -240,6 +273,7 @@ MACRO decred_controller
   END ID_toHost
   PIN IRQ_OUT_fromClient
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 196.000 111.560 200.000 112.160 ;
@@ -247,6 +281,7 @@ MACRO decred_controller
   END IRQ_OUT_fromClient
   PIN IRQ_OUT_toHost
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0.000 19.080 4.000 19.680 ;
@@ -254,6 +289,7 @@ MACRO decred_controller
   END IRQ_OUT_toHost
   PIN M1_CLK_IN
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 43.330 0.000 43.610 4.000 ;
@@ -261,6 +297,7 @@ MACRO decred_controller
   END M1_CLK_IN
   PIN M1_CLK_SELECT
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 33.210 0.000 33.490 4.000 ;
@@ -268,6 +305,7 @@ MACRO decred_controller
   END M1_CLK_SELECT
   PIN MACRO_RD_SELECT[0]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 136.250 0.000 136.530 4.000 ;
@@ -275,6 +313,7 @@ MACRO decred_controller
   END MACRO_RD_SELECT[0]
   PIN MACRO_RD_SELECT[1]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 104.970 0.000 105.250 4.000 ;
@@ -282,6 +321,7 @@ MACRO decred_controller
   END MACRO_RD_SELECT[1]
   PIN MACRO_RD_SELECT[2]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 84.730 0.000 85.010 4.000 ;
@@ -289,6 +329,7 @@ MACRO decred_controller
   END MACRO_RD_SELECT[2]
   PIN MACRO_RD_SELECT[3]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 64.490 0.000 64.770 4.000 ;
@@ -296,6 +337,7 @@ MACRO decred_controller
   END MACRO_RD_SELECT[3]
   PIN MACRO_WR_SELECT[0]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 47.010 196.000 47.290 200.000 ;
@@ -303,6 +345,7 @@ MACRO decred_controller
   END MACRO_WR_SELECT[0]
   PIN MACRO_WR_SELECT[1]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 12.970 0.000 13.250 4.000 ;
@@ -310,6 +353,7 @@ MACRO decred_controller
   END MACRO_WR_SELECT[1]
   PIN MACRO_WR_SELECT[2]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 191.450 196.000 191.730 200.000 ;
@@ -317,6 +361,7 @@ MACRO decred_controller
   END MACRO_WR_SELECT[2]
   PIN MACRO_WR_SELECT[3]
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 196.000 35.400 200.000 36.000 ;
@@ -324,6 +369,7 @@ MACRO decred_controller
   END MACRO_WR_SELECT[3]
   PIN MISO_fromClient
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 6.530 196.000 6.810 200.000 ;
@@ -331,6 +377,7 @@ MACRO decred_controller
   END MISO_fromClient
   PIN MISO_toHost
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 129.810 196.000 130.090 200.000 ;
@@ -338,6 +385,7 @@ MACRO decred_controller
   END MISO_toHost
   PIN MOSI_fromHost
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 196.000 187.720 200.000 188.320 ;
@@ -345,6 +393,7 @@ MACRO decred_controller
   END MOSI_fromHost
   PIN MOSI_toClient
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 196.000 81.640 200.000 82.240 ;
@@ -352,6 +401,7 @@ MACRO decred_controller
   END MOSI_toClient
   PIN PLL_INPUT
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 196.000 20.440 200.000 21.040 ;
@@ -359,6 +409,7 @@ MACRO decred_controller
   END PLL_INPUT
   PIN S1_CLK_IN
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0.000 110.200 4.000 110.800 ;
@@ -366,6 +417,7 @@ MACRO decred_controller
   END S1_CLK_IN
   PIN S1_CLK_SELECT
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 196.000 172.760 200.000 173.360 ;
@@ -373,6 +425,7 @@ MACRO decred_controller
   END S1_CLK_SELECT
   PIN SCLK_fromHost
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 196.000 157.800 200.000 158.400 ;
@@ -380,6 +433,7 @@ MACRO decred_controller
   END SCLK_fromHost
   PIN SCLK_toClient
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0.000 186.360 4.000 186.960 ;
@@ -387,6 +441,7 @@ MACRO decred_controller
   END SCLK_toClient
   PIN SCSN_fromHost
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 98.530 196.000 98.810 200.000 ;
@@ -394,6 +449,7 @@ MACRO decred_controller
   END SCSN_fromHost
   PIN SCSN_toClient
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 196.000 141.480 200.000 142.080 ;
@@ -401,6 +457,7 @@ MACRO decred_controller
   END SCSN_toClient
   PIN THREAD_COUNT[0]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 2.850 0.000 3.130 4.000 ;
@@ -408,6 +465,7 @@ MACRO decred_controller
   END THREAD_COUNT[0]
   PIN THREAD_COUNT[1]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 196.000 126.520 200.000 127.120 ;
@@ -415,6 +473,7 @@ MACRO decred_controller
   END THREAD_COUNT[1]
   PIN THREAD_COUNT[2]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 74.610 0.000 74.890 4.000 ;
@@ -422,6 +481,7 @@ MACRO decred_controller
   END THREAD_COUNT[2]
   PIN THREAD_COUNT[3]
     DIRECTION INPUT ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 58.050 196.000 58.330 200.000 ;
@@ -429,6 +489,7 @@ MACRO decred_controller
   END THREAD_COUNT[3]
   PIN m1_clk_local
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met3 ;
         RECT 0.000 125.160 4.000 125.760 ;
@@ -436,6 +497,7 @@ MACRO decred_controller
   END m1_clk_local
   PIN one
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 146.370 0.000 146.650 4.000 ;
@@ -443,13 +505,22 @@ MACRO decred_controller
   END one
   PIN zero
     DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
     PORT
       LAYER met2 ;
         RECT 187.770 0.000 188.050 4.000 ;
     END
   END zero
   PIN VPWR
-    DIRECTION INPUT ;
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 174.640 10.640 176.240 187.920 ;
+    END
+  END VPWR
+  PIN VPWR
+    DIRECTION INOUT ;
     USE POWER ;
     PORT
       LAYER met4 ;
@@ -457,7 +528,7 @@ MACRO decred_controller
     END
   END VPWR
   PIN VGND
-    DIRECTION INPUT ;
+    DIRECTION INOUT ;
     USE GROUND ;
     PORT
       LAYER met4 ;
@@ -560,7 +631,7 @@ MACRO decred_controller
         RECT 2.825 6.480 196.000 18.680 ;
         RECT 2.825 5.615 195.600 6.480 ;
       LAYER met4 ;
-        RECT 121.735 10.640 176.240 187.920 ;
+        RECT 121.735 17.175 122.985 152.145 ;
   END
 END decred_controller
 END LIBRARY

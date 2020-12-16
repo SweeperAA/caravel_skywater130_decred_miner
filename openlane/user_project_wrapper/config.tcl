@@ -17,14 +17,12 @@ set ::env(FP_IO_HLENGTH) $::unit
 set ::env(FP_IO_VTHICKNESS_MULT) 4
 set ::env(FP_IO_HTHICKNESS_MULT) 4
 
-
 set ::env(CLOCK_PORT) "user_clock2"
 set ::env(CLOCK_PERIOD) "15"
 
 set ::env(GLB_RT_TILES) "16"
-
-#set ::env(PL_TARGET_DENSITY) "0.15"
-#set ::env(GLB_RT_ALLOW_CONGESTION) 1
+set ::env(GLB_RT_MINLAYER) 2
+set ::env(GLB_RT_MAXLAYER) 5
 
 set ::env(PL_OPENPHYSYN_OPTIMIZATIONS) 0
 set ::env(DIODE_INSERTION_STRATEGY) 0
@@ -32,7 +30,7 @@ set ::env(DIODE_INSERTION_STRATEGY) 0
 # Need to fix a FastRoute bug for this to work, but it's good
 # for a sense of "isolation"
 set ::env(MAGIC_ZEROIZE_ORIGIN) 0
-set ::env(MAGIC_WRITE_FULL_LEF) 1
+set ::env(MAGIC_WRITE_FULL_LEF) 0
 
 set ::env(VERILOG_FILES) "\
 	$script_dir/../../verilog/rtl/defines.v \

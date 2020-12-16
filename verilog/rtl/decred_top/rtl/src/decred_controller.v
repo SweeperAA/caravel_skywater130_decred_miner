@@ -27,8 +27,6 @@ module decred_controller (
   input  wire  IRQ_OUT_fromClient,
   input  wire  ID_fromClient,
 
-  input  wire  SPI_CLK_RESET_N,
-
   output wire  SCSN_toClient,
   output wire  SCLK_toClient,
   output wire  MOSI_toClient,
@@ -64,6 +62,22 @@ module decred_controller (
   // M1 clock is sourced from pin or PLL
   assign m1_clk_local = (M1_CLK_SELECT) ? M1_CLK_IN : PLL_INPUT;
 
+  // Resync reset pin to m1_clk_local
+  reg [1:0] reset_resync;
+  always @(posedge m1_clk_local)
+    reset_resync = {reset_resync[0], !EXT_RESET_N_fromHost};
+
+  wire   rst_local_m1;
+  assign rst_local_m1 = reset_resync[1];
+
+  // Stretch reset signal for SPI - assume m1 >> s1
+  reg [19:0] spi_reset_stretch;
+  always @(posedge m1_clk_local)
+    spi_reset_stretch = {spi_reset_stretch[18:0], !EXT_RESET_N_fromHost};
+
+  wire   s1_reset_stretch;
+  assign s1_reset_stretch = spi_reset_stretch[19];
+
   // S1 clock is sourced from pin or divider
   wire s1_clk_local;
   wire s1_div_output;
@@ -71,14 +85,14 @@ module decred_controller (
   clock_div clock_divBlock (
     .iCLK(m1_clk_local),
     .clk_out(s1_div_output),
-    .RSTn(SPI_CLK_RESET_N)
+    .RST(rst_local_m1)
   );
 
   assign s1_clk_local = (S1_CLK_SELECT) ? S1_CLK_IN : s1_div_output;
 
   // //////////////////////////////////////////////////////
   // Pass-through wires
-  wire rst_local;
+  wire rst_local_s1;
   wire sclk_local;
   wire scsn_local;
   wire mosi_local;
@@ -94,7 +108,7 @@ module decred_controller (
   reg [23:1] counter;
   
   always @(posedge m1_clk_local)
-    if (rst_local) 
+    if (rst_local_m1) 
 	    counter <= 0;
 	  else
 	    counter <= counter + 1'b1;
@@ -113,7 +127,7 @@ module decred_controller (
 
   spi spiBlock(
     .SPI_CLK(s1_clk_local),
-    .RST(rst_local),
+    .RST(rst_local_s1),
     .SCLK(sclk_local),
     .SCSN(scsn_local),
     .MOSI(mosi_local),
@@ -129,10 +143,15 @@ module decred_controller (
 
   // //////////////////////////////////////////////////////
   // SPI pass through
+  assign EXT_RESET_N_toClient = EXT_RESET_N_fromHost;
+  assign SCLK_toClient = SCLK_fromHost;
+  assign SCSN_toClient = SCSN_fromHost;
+  assign MOSI_toClient = MOSI_fromHost;
 
   spi_passthrough spiPassBlock(
     .SPI_CLK(s1_clk_local),
-    .RSTin(EXT_RESET_N_fromHost),
+    .SPI_CLK_RST(s1_reset_stretch),
+    .RSTin(rst_local_m1),
     .ID_in(ID_fromClient),
     .IRQ_in(IRQ_OUT_fromClient),
     .address_strobe(address_stobe),
@@ -144,7 +163,7 @@ module decred_controller (
     .MOSIin(MOSI_fromHost),
     .MISOout(MISO_toHost),
 
-    .rst_local(rst_local),
+    .rst_local_s1(rst_local_s1),
     .sclk_local(sclk_local),
     .scsn_local(scsn_local),
     .mosi_local(mosi_local),
@@ -152,10 +171,6 @@ module decred_controller (
     .irq_local(irq_local),
     .write_enable(write_enable),
 
-    .RSTout(EXT_RESET_N_toClient),
-    .SCLKout(SCLK_toClient),
-    .SCSNout(SCSN_toClient),
-    .MOSIout(MOSI_toClient),
     .MISOin(MISO_fromClient),
     .IRQout(IRQ_OUT_toHost)
   );
@@ -169,7 +184,7 @@ module decred_controller (
 
   addressalyzer addressalyzerBlock (
     .SPI_CLK(s1_clk_local),
-    .RST(rst_local),
+    .RST(rst_local_s1),
 
     .start_of_transfer(start_of_transfer),
     .end_of_transfer(end_of_transfer),
@@ -189,8 +204,9 @@ module decred_controller (
 
   regBank regBankBlock (
     .SPI_CLK(s1_clk_local),
-    .RST(rst_local),
+    .RST_S1(rst_local_s1),
     .M1_CLK(m1_clk_local),
+    .RST_M1(rst_local_m1),
     .address(address[7:0]),
     .data_in(mosi_data_out),
     .read_strobe(regFile_read_strobe),

@@ -17,7 +17,7 @@ set ::env(FP_IO_HLENGTH) $::unit
 set ::env(FP_IO_VTHICKNESS_MULT) 4
 set ::env(FP_IO_HTHICKNESS_MULT) 4
 
-set ::env(CLOCK_PORT) "user_clock2"
+set ::env(CLOCK_PORT) "m1_clk_local"
 set ::env(CLOCK_PERIOD) "15"
 
 set ::env(GLB_RT_TILES) "16"

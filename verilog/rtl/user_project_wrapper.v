@@ -67,8 +67,8 @@ module user_project_wrapper #(
   /*--------------------------------------*/
   wire zero;
   wire one;
-  assign io_oeb[28:20] = {9{zero}};
-  assign io_oeb[19:8] = {12{one}};
+  assign io_oeb[27:19] = {9{zero}};
+  assign io_oeb[18:8] = {11{one}};
 
   wire                             m1_clk_local;
   wire                             HASH_EN;
@@ -95,18 +95,17 @@ module user_project_wrapper #(
     .MISO_fromClient(io_in[16]),
     .IRQ_OUT_fromClient(io_in[17]),
     .ID_fromClient(io_in[18]),
-    .SPI_CLK_RESET_N(io_in[19]),
 
     // outputs
-    .SCSN_toClient(io_out[20]),
-    .SCLK_toClient(io_out[21]),
-    .MOSI_toClient(io_out[22]),
-    .EXT_RESET_N_toClient(io_out[23]),
-    .ID_toHost(io_out[24]),
-    .CLK_LED(io_out[25]),
-    .MISO_toHost(io_out[26]),
-    .HASH_LED(io_out[27]),
-    .IRQ_OUT_toHost(io_out[28]),
+    .SCSN_toClient(io_out[19]),
+    .SCLK_toClient(io_out[20]),
+    .MOSI_toClient(io_out[21]),
+    .EXT_RESET_N_toClient(io_out[22]),
+    .ID_toHost(io_out[23]),
+    .CLK_LED(io_out[24]),
+    .MISO_toHost(io_out[25]),
+    .HASH_LED(io_out[26]),
+    .IRQ_OUT_toHost(io_out[27]),
 
     // hash macro exports
     .m1_clk_local(m1_clk_local),

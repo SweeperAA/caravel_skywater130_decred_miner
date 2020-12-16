@@ -4,6 +4,7 @@
 
 module spi_passthrough (
   input  wire  SPI_CLK,
+  input  wire  SPI_CLK_RST,
   input  wire  RSTin,
   input  wire	 ID_in, 
   input	 wire	 IRQ_in,
@@ -16,7 +17,7 @@ module spi_passthrough (
   input  wire  MOSIin,
   output wire  MISOout,
 
-  output wire  rst_local,
+  output wire  rst_local_s1,
   output wire  sclk_local,
   output wire	 scsn_local,
   output wire	 mosi_local,
@@ -24,10 +25,6 @@ module spi_passthrough (
   input	 wire	 irq_local,
   output wire  write_enable,
 
-  output wire  RSTout,
-  output wire  SCLKout,
-  output wire  SCSNout,
-  output wire  MOSIout,
   input  wire  MISOin,
   output wire  IRQout
   );
@@ -62,23 +59,19 @@ module spi_passthrough (
 
   always @(posedge SPI_CLK)
     begin
-      reset_resync <= {reset_resync[0], !RSTin};
+      reset_resync <= {reset_resync[0], SPI_CLK_RST};
     end
 
   // //////////////////////////////////////////////////////
   // pass-through signals and pick-off
 
   assign rst_wire = reset_resync[1];
-  assign rst_local = rst_wire;
-  assign RSTout = RSTin;
+  assign rst_local_s1 = rst_wire;
 
-  assign SCLKout = SCLKin;
   assign sclk_local = SCLKin;
 
-  assign SCSNout = SCSNin;
   assign scsn_local = SCSNin;
 
-  assign MOSIout = MOSIin;
   assign mosi_local = MOSIin;
 
   // //////////////////////////////////////////////////////

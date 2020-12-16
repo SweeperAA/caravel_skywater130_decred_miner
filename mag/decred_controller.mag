@@ -1,268 +1,302 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1608049295
+timestamp 1608087083
 << obsli1 >>
 rect 1104 2159 38824 37553
 << obsm1 >>
-rect 566 2128 38824 37584
+rect 1104 1912 38824 39160
 << metal2 >>
-rect 2778 39200 2834 40000
-rect 5170 39200 5226 40000
-rect 7562 39200 7618 40000
-rect 9770 39200 9826 40000
-rect 12162 39200 12218 40000
-rect 14554 39200 14610 40000
-rect 16946 39200 17002 40000
-rect 19338 39200 19394 40000
-rect 21546 39200 21602 40000
+rect 1306 39200 1362 40000
+rect 3330 39200 3386 40000
+rect 5354 39200 5410 40000
+rect 7378 39200 7434 40000
+rect 9402 39200 9458 40000
+rect 11610 39200 11666 40000
+rect 13634 39200 13690 40000
+rect 15658 39200 15714 40000
+rect 17682 39200 17738 40000
+rect 19706 39200 19762 40000
+rect 21914 39200 21970 40000
 rect 23938 39200 23994 40000
-rect 26330 39200 26386 40000
-rect 28722 39200 28778 40000
-rect 31114 39200 31170 40000
-rect 33322 39200 33378 40000
-rect 35714 39200 35770 40000
-rect 38106 39200 38162 40000
+rect 25962 39200 26018 40000
+rect 27986 39200 28042 40000
+rect 30010 39200 30066 40000
+rect 32034 39200 32090 40000
+rect 34242 39200 34298 40000
+rect 36266 39200 36322 40000
+rect 38290 39200 38346 40000
 rect 570 0 626 800
-rect 2778 0 2834 800
-rect 5170 0 5226 800
-rect 7562 0 7618 800
-rect 9954 0 10010 800
-rect 12346 0 12402 800
-rect 14554 0 14610 800
+rect 2594 0 2650 800
+rect 4618 0 4674 800
+rect 6642 0 6698 800
+rect 8666 0 8722 800
+rect 10690 0 10746 800
+rect 12898 0 12954 800
+rect 14922 0 14978 800
 rect 16946 0 17002 800
-rect 19338 0 19394 800
-rect 21730 0 21786 800
-rect 24122 0 24178 800
-rect 26330 0 26386 800
-rect 28722 0 28778 800
-rect 31114 0 31170 800
-rect 33506 0 33562 800
-rect 35898 0 35954 800
-rect 38106 0 38162 800
+rect 18970 0 19026 800
+rect 20994 0 21050 800
+rect 23018 0 23074 800
+rect 25226 0 25282 800
+rect 27250 0 27306 800
+rect 29274 0 29330 800
+rect 31298 0 31354 800
+rect 33322 0 33378 800
+rect 35346 0 35402 800
+rect 37554 0 37610 800
 << obsm2 >>
-rect 572 39144 2722 39200
-rect 2890 39144 5114 39200
-rect 5282 39144 7506 39200
-rect 7674 39144 9714 39200
-rect 9882 39144 12106 39200
-rect 12274 39144 14498 39200
-rect 14666 39144 16890 39200
-rect 17058 39144 19282 39200
-rect 19450 39144 21490 39200
-rect 21658 39144 23882 39200
-rect 24050 39144 26274 39200
-rect 26442 39144 28666 39200
-rect 28834 39144 31058 39200
-rect 31226 39144 33266 39200
-rect 33434 39144 35658 39200
-rect 35826 39144 38050 39200
-rect 572 856 38160 39144
-rect 682 800 2722 856
-rect 2890 800 5114 856
-rect 5282 800 7506 856
-rect 7674 800 9898 856
-rect 10066 800 12290 856
-rect 12458 800 14498 856
-rect 14666 800 16890 856
-rect 17058 800 19282 856
-rect 19450 800 21674 856
-rect 21842 800 24066 856
-rect 24234 800 26274 856
-rect 26442 800 28666 856
-rect 28834 800 31058 856
-rect 31226 800 33450 856
-rect 33618 800 35842 856
-rect 36010 800 38050 856
+rect 570 39144 1250 39200
+rect 1418 39144 3274 39200
+rect 3442 39144 5298 39200
+rect 5466 39144 7322 39200
+rect 7490 39144 9346 39200
+rect 9514 39144 11554 39200
+rect 11722 39144 13578 39200
+rect 13746 39144 15602 39200
+rect 15770 39144 17626 39200
+rect 17794 39144 19650 39200
+rect 19818 39144 21858 39200
+rect 22026 39144 23882 39200
+rect 24050 39144 25906 39200
+rect 26074 39144 27930 39200
+rect 28098 39144 29954 39200
+rect 30122 39144 31978 39200
+rect 32146 39144 34186 39200
+rect 34354 39144 36210 39200
+rect 36378 39144 38234 39200
+rect 570 856 38344 39144
+rect 682 800 2538 856
+rect 2706 800 4562 856
+rect 4730 800 6586 856
+rect 6754 800 8610 856
+rect 8778 800 10634 856
+rect 10802 800 12842 856
+rect 13010 800 14866 856
+rect 15034 800 16890 856
+rect 17058 800 18914 856
+rect 19082 800 20938 856
+rect 21106 800 22962 856
+rect 23130 800 25170 856
+rect 25338 800 27194 856
+rect 27362 800 29218 856
+rect 29386 800 31242 856
+rect 31410 800 33266 856
+rect 33434 800 35290 856
+rect 35458 800 37498 856
+rect 37666 800 38344 856
 << metal3 >>
-rect 0 38904 800 39024
-rect 39200 37272 40000 37392
-rect 0 35368 800 35488
-rect 39200 33736 40000 33856
-rect 0 32104 800 32224
-rect 39200 30472 40000 30592
-rect 0 28568 800 28688
-rect 39200 26936 40000 27056
+rect 39200 37544 40000 37664
+rect 0 37272 800 37392
+rect 39200 34552 40000 34672
+rect 0 34008 800 34128
+rect 39200 31560 40000 31680
+rect 0 31016 800 31136
+rect 39200 28296 40000 28416
+rect 0 28024 800 28144
+rect 39200 25304 40000 25424
 rect 0 25032 800 25152
-rect 39200 23400 40000 23520
-rect 0 21496 800 21616
-rect 39200 19864 40000 19984
-rect 0 17960 800 18080
+rect 39200 22312 40000 22432
+rect 0 22040 800 22160
+rect 39200 19320 40000 19440
+rect 0 19048 800 19168
 rect 39200 16328 40000 16448
-rect 0 14696 800 14816
-rect 39200 13064 40000 13184
-rect 0 11160 800 11280
-rect 39200 9528 40000 9648
-rect 0 7624 800 7744
-rect 39200 5992 40000 6112
-rect 0 4088 800 4208
-rect 39200 2456 40000 2576
+rect 0 15784 800 15904
+rect 39200 13336 40000 13456
+rect 0 12792 800 12912
+rect 39200 10072 40000 10192
+rect 0 9800 800 9920
+rect 39200 7080 40000 7200
+rect 0 6808 800 6928
+rect 39200 4088 40000 4208
+rect 0 3816 800 3936
+rect 39200 1096 40000 1216
 << obsm3 >>
-rect 880 38824 39200 38997
-rect 800 37472 39200 38824
-rect 800 37192 39120 37472
-rect 800 35568 39200 37192
-rect 880 35288 39200 35568
-rect 800 33936 39200 35288
-rect 800 33656 39120 33936
-rect 800 32304 39200 33656
-rect 880 32024 39200 32304
-rect 800 30672 39200 32024
-rect 800 30392 39120 30672
-rect 800 28768 39200 30392
-rect 880 28488 39200 28768
-rect 800 27136 39200 28488
-rect 800 26856 39120 27136
-rect 800 25232 39200 26856
-rect 880 24952 39200 25232
-rect 800 23600 39200 24952
-rect 800 23320 39120 23600
-rect 800 21696 39200 23320
-rect 880 21416 39200 21696
-rect 800 20064 39200 21416
-rect 800 19784 39120 20064
-rect 800 18160 39200 19784
-rect 880 17880 39200 18160
-rect 800 16528 39200 17880
-rect 800 16248 39120 16528
-rect 800 14896 39200 16248
-rect 880 14616 39200 14896
-rect 800 13264 39200 14616
-rect 800 12984 39120 13264
-rect 800 11360 39200 12984
-rect 880 11080 39200 11360
-rect 800 9728 39200 11080
-rect 800 9448 39120 9728
-rect 800 7824 39200 9448
-rect 880 7544 39200 7824
-rect 800 6192 39200 7544
-rect 800 5912 39120 6192
-rect 800 4288 39200 5912
-rect 880 4008 39200 4288
-rect 800 2656 39200 4008
-rect 800 2376 39120 2656
-rect 800 2143 39200 2376
+rect 565 37472 39120 37637
+rect 880 37464 39120 37472
+rect 880 37192 39200 37464
+rect 565 34752 39200 37192
+rect 565 34472 39120 34752
+rect 565 34208 39200 34472
+rect 880 33928 39200 34208
+rect 565 31760 39200 33928
+rect 565 31480 39120 31760
+rect 565 31216 39200 31480
+rect 880 30936 39200 31216
+rect 565 28496 39200 30936
+rect 565 28224 39120 28496
+rect 880 28216 39120 28224
+rect 880 27944 39200 28216
+rect 565 25504 39200 27944
+rect 565 25232 39120 25504
+rect 880 25224 39120 25232
+rect 880 24952 39200 25224
+rect 565 22512 39200 24952
+rect 565 22240 39120 22512
+rect 880 22232 39120 22240
+rect 880 21960 39200 22232
+rect 565 19520 39200 21960
+rect 565 19248 39120 19520
+rect 880 19240 39120 19248
+rect 880 18968 39200 19240
+rect 565 16528 39200 18968
+rect 565 16248 39120 16528
+rect 565 15984 39200 16248
+rect 880 15704 39200 15984
+rect 565 13536 39200 15704
+rect 565 13256 39120 13536
+rect 565 12992 39200 13256
+rect 880 12712 39200 12992
+rect 565 10272 39200 12712
+rect 565 10000 39120 10272
+rect 880 9992 39120 10000
+rect 880 9720 39200 9992
+rect 565 7280 39200 9720
+rect 565 7008 39120 7280
+rect 880 7000 39120 7008
+rect 880 6728 39200 7000
+rect 565 4288 39200 6728
+rect 565 4016 39120 4288
+rect 880 4008 39120 4016
+rect 880 3736 39200 4008
+rect 565 1296 39200 3736
+rect 565 1123 39120 1296
 << metal4 >>
 rect 4208 2128 4528 37584
 rect 19568 2128 19888 37584
 << obsm4 >>
-rect 18643 2128 19488 37584
-rect 19968 2128 35248 37584
+rect 24347 2128 35248 37584
 << labels >>
-rlabel metal3 s 0 21496 800 21616 6 CLK_LED
+rlabel metal2 s 3330 39200 3386 40000 6 CLK_LED
 port 1 nsew default output
-rlabel metal2 s 9770 39200 9826 40000 6 DATA_AVAILABLE
+rlabel metal2 s 21914 39200 21970 40000 6 DATA_AVAILABLE[0]
 port 2 nsew default input
-rlabel metal2 s 5170 39200 5226 40000 6 DATA_FROM_HASH[0]
+rlabel metal2 s 17682 39200 17738 40000 6 DATA_AVAILABLE[1]
 port 3 nsew default input
-rlabel metal3 s 0 35368 800 35488 6 DATA_FROM_HASH[1]
+rlabel metal3 s 0 12792 800 12912 6 DATA_AVAILABLE[2]
 port 4 nsew default input
-rlabel metal2 s 23938 39200 23994 40000 6 DATA_FROM_HASH[2]
+rlabel metal2 s 34242 39200 34298 40000 6 DATA_AVAILABLE[3]
 port 5 nsew default input
-rlabel metal2 s 21730 0 21786 800 6 DATA_FROM_HASH[3]
+rlabel metal2 s 18970 0 19026 800 6 DATA_FROM_HASH[0]
 port 6 nsew default input
-rlabel metal2 s 26330 0 26386 800 6 DATA_FROM_HASH[4]
+rlabel metal2 s 23018 0 23074 800 6 DATA_FROM_HASH[1]
 port 7 nsew default input
-rlabel metal2 s 19338 39200 19394 40000 6 DATA_FROM_HASH[5]
+rlabel metal2 s 30010 39200 30066 40000 6 DATA_FROM_HASH[2]
 port 8 nsew default input
-rlabel metal3 s 0 25032 800 25152 6 DATA_FROM_HASH[6]
+rlabel metal2 s 5354 39200 5410 40000 6 DATA_FROM_HASH[3]
 port 9 nsew default input
-rlabel metal3 s 39200 37272 40000 37392 6 DATA_FROM_HASH[7]
+rlabel metal3 s 0 19048 800 19168 6 DATA_FROM_HASH[4]
 port 10 nsew default input
-rlabel metal3 s 39200 19864 40000 19984 6 DATA_TO_HASH[0]
-port 11 nsew default output
-rlabel metal2 s 2778 39200 2834 40000 6 DATA_TO_HASH[1]
-port 12 nsew default output
-rlabel metal2 s 28722 0 28778 800 6 DATA_TO_HASH[2]
-port 13 nsew default output
-rlabel metal3 s 0 4088 800 4208 6 DATA_TO_HASH[3]
+rlabel metal3 s 39200 10072 40000 10192 6 DATA_FROM_HASH[5]
+port 11 nsew default input
+rlabel metal2 s 15658 39200 15714 40000 6 DATA_FROM_HASH[6]
+port 12 nsew default input
+rlabel metal2 s 25226 0 25282 800 6 DATA_FROM_HASH[7]
+port 13 nsew default input
+rlabel metal3 s 0 28024 800 28144 6 DATA_TO_HASH[0]
 port 14 nsew default output
-rlabel metal2 s 26330 39200 26386 40000 6 DATA_TO_HASH[4]
+rlabel metal2 s 36266 39200 36322 40000 6 DATA_TO_HASH[1]
 port 15 nsew default output
-rlabel metal2 s 5170 0 5226 800 6 DATA_TO_HASH[5]
+rlabel metal2 s 4618 0 4674 800 6 DATA_TO_HASH[2]
 port 16 nsew default output
-rlabel metal3 s 39200 2456 40000 2576 6 DATA_TO_HASH[6]
+rlabel metal2 s 35346 0 35402 800 6 DATA_TO_HASH[3]
 port 17 nsew default output
-rlabel metal3 s 0 28568 800 28688 6 DATA_TO_HASH[7]
+rlabel metal2 s 7378 39200 7434 40000 6 DATA_TO_HASH[4]
 port 18 nsew default output
-rlabel metal3 s 39200 9528 40000 9648 6 EXT_RESET_N_fromHost
-port 19 nsew default input
-rlabel metal3 s 39200 30472 40000 30592 6 EXT_RESET_N_toClient
+rlabel metal3 s 39200 1096 40000 1216 6 DATA_TO_HASH[5]
+port 19 nsew default output
+rlabel metal3 s 39200 19320 40000 19440 6 DATA_TO_HASH[6]
 port 20 nsew default output
-rlabel metal2 s 38106 0 38162 800 6 HASH_ADDR[0]
+rlabel metal2 s 33322 0 33378 800 6 DATA_TO_HASH[7]
 port 21 nsew default output
-rlabel metal2 s 12162 39200 12218 40000 6 HASH_ADDR[1]
-port 22 nsew default output
-rlabel metal3 s 0 7624 800 7744 6 HASH_ADDR[2]
+rlabel metal2 s 23938 39200 23994 40000 6 EXT_RESET_N_fromHost
+port 22 nsew default input
+rlabel metal3 s 0 31016 800 31136 6 EXT_RESET_N_toClient
 port 23 nsew default output
-rlabel metal2 s 35898 0 35954 800 6 HASH_ADDR[3]
+rlabel metal2 s 31298 0 31354 800 6 HASH_ADDR[0]
 port 24 nsew default output
-rlabel metal2 s 21546 39200 21602 40000 6 HASH_ADDR[4]
+rlabel metal2 s 32034 39200 32090 40000 6 HASH_ADDR[1]
 port 25 nsew default output
-rlabel metal2 s 12346 0 12402 800 6 HASH_ADDR[5]
+rlabel metal2 s 10690 0 10746 800 6 HASH_ADDR[2]
 port 26 nsew default output
-rlabel metal2 s 16946 39200 17002 40000 6 HASH_EN
+rlabel metal2 s 27986 39200 28042 40000 6 HASH_ADDR[3]
 port 27 nsew default output
-rlabel metal2 s 33506 0 33562 800 6 HASH_LED
+rlabel metal3 s 0 6808 800 6928 6 HASH_ADDR[4]
 port 28 nsew default output
-rlabel metal2 s 38106 39200 38162 40000 6 ID_fromClient
-port 29 nsew default input
-rlabel metal3 s 0 38904 800 39024 6 ID_toHost
+rlabel metal3 s 0 9800 800 9920 6 HASH_ADDR[5]
+port 29 nsew default output
+rlabel metal2 s 13634 39200 13690 40000 6 HASH_EN
 port 30 nsew default output
-rlabel metal2 s 16946 0 17002 800 6 IRQ_OUT_fromClient
-port 31 nsew default input
-rlabel metal3 s 39200 23400 40000 23520 6 IRQ_OUT_toHost
-port 32 nsew default output
-rlabel metal3 s 0 11160 800 11280 6 M1_CLK_IN
-port 33 nsew default input
-rlabel metal3 s 39200 33736 40000 33856 6 M1_CLK_SELECT
+rlabel metal3 s 0 15784 800 15904 6 HASH_LED
+port 31 nsew default output
+rlabel metal3 s 39200 13336 40000 13456 6 ID_fromClient
+port 32 nsew default input
+rlabel metal3 s 0 34008 800 34128 6 ID_toHost
+port 33 nsew default output
+rlabel metal3 s 39200 22312 40000 22432 6 IRQ_OUT_fromClient
 port 34 nsew default input
-rlabel metal3 s 39200 5992 40000 6112 6 MACRO_RD_SELECT
+rlabel metal3 s 0 3816 800 3936 6 IRQ_OUT_toHost
 port 35 nsew default output
-rlabel metal2 s 9954 0 10010 800 6 MACRO_WR_SELECT
-port 36 nsew default output
-rlabel metal2 s 7562 0 7618 800 6 MISO_fromClient
+rlabel metal2 s 8666 0 8722 800 6 M1_CLK_IN
+port 36 nsew default input
+rlabel metal2 s 6642 0 6698 800 6 M1_CLK_SELECT
 port 37 nsew default input
-rlabel metal2 s 31114 0 31170 800 6 MISO_toHost
+rlabel metal2 s 27250 0 27306 800 6 MACRO_RD_SELECT[0]
 port 38 nsew default output
-rlabel metal2 s 24122 0 24178 800 6 MOSI_fromHost
-port 39 nsew default input
-rlabel metal2 s 19338 0 19394 800 6 MOSI_toClient
+rlabel metal2 s 20994 0 21050 800 6 MACRO_RD_SELECT[1]
+port 39 nsew default output
+rlabel metal2 s 16946 0 17002 800 6 MACRO_RD_SELECT[2]
 port 40 nsew default output
-rlabel metal2 s 14554 0 14610 800 6 PLL_INPUT
-port 41 nsew default input
-rlabel metal3 s 0 32104 800 32224 6 S1_CLK_IN
-port 42 nsew default input
-rlabel metal2 s 2778 0 2834 800 6 S1_CLK_SELECT
-port 43 nsew default input
-rlabel metal2 s 28722 39200 28778 40000 6 SCLK_fromHost
-port 44 nsew default input
-rlabel metal3 s 39200 16328 40000 16448 6 SCLK_toClient
+rlabel metal2 s 12898 0 12954 800 6 MACRO_RD_SELECT[3]
+port 41 nsew default output
+rlabel metal2 s 9402 39200 9458 40000 6 MACRO_WR_SELECT[0]
+port 42 nsew default output
+rlabel metal2 s 2594 0 2650 800 6 MACRO_WR_SELECT[1]
+port 43 nsew default output
+rlabel metal2 s 38290 39200 38346 40000 6 MACRO_WR_SELECT[2]
+port 44 nsew default output
+rlabel metal3 s 39200 7080 40000 7200 6 MACRO_WR_SELECT[3]
 port 45 nsew default output
-rlabel metal3 s 0 17960 800 18080 6 SCSN_fromHost
+rlabel metal2 s 1306 39200 1362 40000 6 MISO_fromClient
 port 46 nsew default input
-rlabel metal2 s 14554 39200 14610 40000 6 SCSN_toClient
+rlabel metal2 s 25962 39200 26018 40000 6 MISO_toHost
 port 47 nsew default output
-rlabel metal2 s 31114 39200 31170 40000 6 SPI_CLK_RESET_N
+rlabel metal3 s 39200 37544 40000 37664 6 MOSI_fromHost
 port 48 nsew default input
-rlabel metal3 s 39200 26936 40000 27056 6 THREAD_COUNT[0]
-port 49 nsew default input
-rlabel metal3 s 39200 13064 40000 13184 6 THREAD_COUNT[1]
+rlabel metal3 s 39200 16328 40000 16448 6 MOSI_toClient
+port 49 nsew default output
+rlabel metal3 s 39200 4088 40000 4208 6 PLL_INPUT
 port 50 nsew default input
-rlabel metal2 s 570 0 626 800 6 THREAD_COUNT[2]
+rlabel metal3 s 0 22040 800 22160 6 S1_CLK_IN
 port 51 nsew default input
-rlabel metal2 s 33322 39200 33378 40000 6 THREAD_COUNT[3]
+rlabel metal3 s 39200 34552 40000 34672 6 S1_CLK_SELECT
 port 52 nsew default input
-rlabel metal2 s 35714 39200 35770 40000 6 m1_clk_local
-port 53 nsew default output
-rlabel metal3 s 0 14696 800 14816 6 one
+rlabel metal3 s 39200 31560 40000 31680 6 SCLK_fromHost
+port 53 nsew default input
+rlabel metal3 s 0 37272 800 37392 6 SCLK_toClient
 port 54 nsew default output
-rlabel metal2 s 7562 39200 7618 40000 6 zero
-port 55 nsew default output
+rlabel metal2 s 19706 39200 19762 40000 6 SCSN_fromHost
+port 55 nsew default input
+rlabel metal3 s 39200 28296 40000 28416 6 SCSN_toClient
+port 56 nsew default output
+rlabel metal2 s 570 0 626 800 6 THREAD_COUNT[0]
+port 57 nsew default input
+rlabel metal3 s 39200 25304 40000 25424 6 THREAD_COUNT[1]
+port 58 nsew default input
+rlabel metal2 s 14922 0 14978 800 6 THREAD_COUNT[2]
+port 59 nsew default input
+rlabel metal2 s 11610 39200 11666 40000 6 THREAD_COUNT[3]
+port 60 nsew default input
+rlabel metal3 s 0 25032 800 25152 6 m1_clk_local
+port 61 nsew default output
+rlabel metal2 s 29274 0 29330 800 6 one
+port 62 nsew default output
+rlabel metal2 s 37554 0 37610 800 6 zero
+port 63 nsew default output
 rlabel metal4 s 4208 2128 4528 37584 6 VPWR
-port 56 nsew power input
+port 64 nsew power input
 rlabel metal4 s 19568 2128 19888 37584 6 VGND
-port 57 nsew ground input
+port 65 nsew ground input
 << properties >>
 string LEFclass BLOCK
 string FIXED_BBOX 0 0 40000 40000

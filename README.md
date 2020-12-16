@@ -109,7 +109,7 @@ cd openlane/designs
 git clone https://github.com/SweeperAA/caravel_skywater130_decred_miner.git
 cd caravel_skywater130_decred_miner
 make uncompress
-cd caravel_skywater130_decred_miner/openlane
+cd openlane
 ```
 
 ### Build Decred Flow
@@ -130,12 +130,7 @@ Step 3: Integrate macros inside decred_top design.
 make decred_top
 ```
 
-Step 4: Integrate decred_top design into user_project_wrapper.
-```
-make user_project_wrapper
-```
-
-Step 5: Integrate user_project_wrapper into caravel SOC.
+Step 4: Integrate user_project_wrapper into caravel SOC.
 ```
 cd ..
 make ship

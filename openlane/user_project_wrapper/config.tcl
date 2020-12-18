@@ -22,7 +22,8 @@ set ::env(CLOCK_PERIOD) "15"
 
 set ::env(GLB_RT_TILES) "16"
 set ::env(GLB_RT_MINLAYER) 2
-set ::env(GLB_RT_MAXLAYER) 5
+set ::env(GLB_RT_MAXLAYER) 4
+set ::env(GLB_RT_OBS) "li1 0 0 2920 3520, met4 0 0 2920 3520, met5 0 0 2920 3520"
 
 set ::env(PL_OPENPHYSYN_OPTIMIZATIONS) 0
 set ::env(DIODE_INSERTION_STRATEGY) 0

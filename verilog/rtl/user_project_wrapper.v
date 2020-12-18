@@ -81,6 +81,10 @@ module user_project_wrapper #(
   wire [7: 0]                      DATA_FROM_HASH;
 
   decred_controller decred_controller_block (
+`ifdef USE_POWER_PINS
+	.VPWR(vccd1),
+	.VGND(vssd1),
+`endif
 
     // inputs
     .PLL_INPUT(user_clock2),
@@ -124,6 +128,10 @@ module user_project_wrapper #(
   );
 
 decred_hash_macro decred_hash_block0 (
+`ifdef USE_POWER_PINS
+	.VPWR(vccd1),
+	.VGND(vssd1),
+`endif
       .CLK(m1_clk_local), 
       .HASH_EN(HASH_EN), 
       .MACRO_WR_SELECT(MACRO_WR_SELECT[0]),
@@ -136,6 +144,10 @@ decred_hash_macro decred_hash_block0 (
   );
 
 decred_hash_macro decred_hash_block1 (
+`ifdef USE_POWER_PINS
+	.VPWR(vccd1),
+	.VGND(vssd1),
+`endif
       .CLK(m1_clk_local), 
       .HASH_EN(HASH_EN), 
       .MACRO_WR_SELECT(MACRO_WR_SELECT[1]),
@@ -148,6 +160,10 @@ decred_hash_macro decred_hash_block1 (
   );
 
 decred_hash_macro decred_hash_block2 (
+`ifdef USE_POWER_PINS
+	.VPWR(vccd1),
+	.VGND(vssd1),
+`endif
       .CLK(m1_clk_local), 
       .HASH_EN(HASH_EN), 
       .MACRO_WR_SELECT(MACRO_WR_SELECT[2]),
@@ -161,6 +177,10 @@ decred_hash_macro decred_hash_block2 (
 
 
 decred_hash_macro decred_hash_block3 (
+`ifdef USE_POWER_PINS
+	.VPWR(vccd1),
+	.VGND(vssd1),
+`endif
       .CLK(m1_clk_local), 
       .HASH_EN(HASH_EN), 
       .MACRO_WR_SELECT(MACRO_WR_SELECT[3]),

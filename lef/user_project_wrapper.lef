@@ -5925,13 +5925,13 @@ MACRO user_project_wrapper
   END vssa2
   OBS
       LAYER li1 ;
-        RECT 139.120 380.555 2788.400 2933.095 ;
+        RECT 139.120 380.555 2788.400 2908.785 ;
       LAYER met1 ;
         RECT 14.790 18.060 2917.250 3503.320 ;
       LAYER met2 ;
         RECT 2.710 0.300 2917.370 3519.700 ;
       LAYER met3 ;
-        RECT 0.300 28.980 2919.700 3501.145 ;
+        RECT 0.300 28.980 2919.700 3490.700 ;
       LAYER met4 ;
         RECT 4.020 0.300 2887.020 3519.700 ;
       LAYER met5 ;

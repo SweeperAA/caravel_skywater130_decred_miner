@@ -9,10 +9,6 @@ verilog_elaborate
 init_floorplan
 place_io_ol
 
-set ::env(FP_DEF_TEMPATE) $script_dir/../../def/user_project_wrapper_empty.def
-
-apply_def_template
-
 add_macro_placement decred_hash_block0 133.28 368.0 S
 add_macro_placement decred_hash_block1 1593.92 368.0 S
 add_macro_placement decred_hash_block2 133.28 1919.58 S
@@ -25,7 +21,11 @@ exec -ignorestderr openroad -exit $script_dir/gen_pdn.tcl
 set_def $::env(pdn_tmp_file_tag).def
 
 global_routing_or
+add_route_obs
 detailed_routing
+
+write_powered_verilog -power vccd1 -ground vssd1
+set_netlist $::env(lvs_result_file_tag).powered.v
 
 run_magic
 run_magic_spice_export

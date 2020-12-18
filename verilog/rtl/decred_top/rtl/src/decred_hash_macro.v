@@ -600,7 +600,16 @@ module decred_hash_macro #(
   parameter NONCE_START=0,
   parameter NONCE_STRIDE=`NUM_OF_THREADS
 )(
-
+`ifdef USE_POWER_PINS
+    inout vdda1,	// User area 1 3.3V supply
+    inout vdda2,	// User area 2 3.3V supply
+    inout vssa1,	// User area 1 analog ground
+    inout vssa2,	// User area 2 analog ground
+    inout vccd1,	// User area 1 1.8V supply
+    inout vccd2,	// User area 2 1.8v supply
+    inout vssd1,	// User area 1 digital ground
+    inout vssd2,	// User area 2 digital ground
+`endif
 		input wire            CLK,
 		input wire            HASH_EN,
 `ifdef USE_REG_WRITE_TO_HASHMACRO

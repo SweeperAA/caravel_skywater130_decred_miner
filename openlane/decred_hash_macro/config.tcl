@@ -14,7 +14,7 @@ set ::env(CLOCK_NET) "CLK"
 set ::env(DESIGN_IS_CORE) 0
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 1200 1000"
+set ::env(DIE_AREA) "0 0 1220 1020"
 
 set ::env(CLOCK_PERIOD) "15.000"
 #default is 50
@@ -26,6 +26,9 @@ set ::env(CELL_PAD) "4"
 set ::env(GLB_RT_ADJUSTMENT) "0.15"
 #default is 3
 set ::env(DIODE_INSERTION_STRATEGY) "0"
+
+set ::env(VDD_NETS) [list {vccd1} {vccd2} {vdda1} {vdda2}]
+set ::env(GND_NETS) [list {vssd1} {vssd2} {vssa1} {vssa2}]
 
 # default is 5
 set ::env(SYNTH_MAX_FANOUT) "5"

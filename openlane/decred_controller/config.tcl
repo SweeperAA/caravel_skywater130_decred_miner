@@ -20,7 +20,7 @@ set ::env(CLOCK_NET) "m1_clk_local addressalyzerBlock.SPI_CLK"
 set ::env(DESIGN_IS_CORE) 0
 
 set ::env(FP_SIZING) absolute
-set ::env(DIE_AREA) "0 0 200 200"
+set ::env(DIE_AREA) "0 0 205 205"
 
 set ::env(CLOCK_PERIOD) "15.000"
 #default is 50
@@ -34,6 +34,8 @@ set ::env(GLB_RT_ADJUSTMENT) "0.15"
 set ::env(DIODE_INSERTION_STRATEGY) "3"
 set ::env(GLB_RT_MAX_DIODE_INS_ITERS) "10"
 
+set ::env(VDD_NETS) [list {vccd1} {vccd2} {vdda1} {vdda2}]
+set ::env(GND_NETS) [list {vssd1} {vssd2} {vssa1} {vssa2}]
 
 # default is 5
 set ::env(SYNTH_MAX_FANOUT) "5"

@@ -82,10 +82,15 @@ module user_project_wrapper #(
 
   decred_controller decred_controller_block (
 `ifdef USE_POWER_PINS
-	.VPWR(vccd1),
-	.VGND(vssd1),
+    .vdda1(vdda1),
+    .vdda2(vdda2),
+    .vssa1(vssa1),
+    .vssa2(vssa2),
+    .vccd1(vccd1),
+    .vccd2(vccd2),
+    .vssd1(vssd1),
+    .vssd2(vssd2),
 `endif
-
     // inputs
     .PLL_INPUT(user_clock2),
     .EXT_RESET_N_fromHost(io_in[8]),
@@ -129,8 +134,14 @@ module user_project_wrapper #(
 
 decred_hash_macro decred_hash_block0 (
 `ifdef USE_POWER_PINS
-	.VPWR(vccd1),
-	.VGND(vssd1),
+    .vdda1(vdda1),
+    .vdda2(vdda2),
+    .vssa1(vssa1),
+    .vssa2(vssa2),
+    .vccd1(vccd1),
+    .vccd2(vccd2),
+    .vssd1(vssd1),
+    .vssd2(vssd2),
 `endif
       .CLK(m1_clk_local), 
       .HASH_EN(HASH_EN), 
@@ -145,8 +156,14 @@ decred_hash_macro decred_hash_block0 (
 
 decred_hash_macro decred_hash_block1 (
 `ifdef USE_POWER_PINS
-	.VPWR(vccd1),
-	.VGND(vssd1),
+    .vdda1(vdda1),
+    .vdda2(vdda2),
+    .vssa1(vssa1),
+    .vssa2(vssa2),
+    .vccd1(vccd1),
+    .vccd2(vccd2),
+    .vssd1(vssd1),
+    .vssd2(vssd2),
 `endif
       .CLK(m1_clk_local), 
       .HASH_EN(HASH_EN), 
@@ -161,8 +178,14 @@ decred_hash_macro decred_hash_block1 (
 
 decred_hash_macro decred_hash_block2 (
 `ifdef USE_POWER_PINS
-	.VPWR(vccd1),
-	.VGND(vssd1),
+    .vdda1(vdda1),
+    .vdda2(vdda2),
+    .vssa1(vssa1),
+    .vssa2(vssa2),
+    .vccd1(vccd1),
+    .vccd2(vccd2),
+    .vssd1(vssd1),
+    .vssd2(vssd2),
 `endif
       .CLK(m1_clk_local), 
       .HASH_EN(HASH_EN), 
@@ -178,8 +201,14 @@ decred_hash_macro decred_hash_block2 (
 
 decred_hash_macro decred_hash_block3 (
 `ifdef USE_POWER_PINS
-	.VPWR(vccd1),
-	.VGND(vssd1),
+    .vdda1(vdda1),
+    .vdda2(vdda2),
+    .vssa1(vssa1),
+    .vssa2(vssa2),
+    .vccd1(vccd1),
+    .vccd2(vccd2),
+    .vssd1(vssd1),
+    .vssd2(vssd2),
 `endif
       .CLK(m1_clk_local), 
       .HASH_EN(HASH_EN), 

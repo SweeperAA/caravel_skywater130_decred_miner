@@ -198,7 +198,6 @@ decred_hash_macro decred_hash_block2 (
       .DATA_FROM_HASH(DATA_FROM_HASH)
   );
 
-
 decred_hash_macro decred_hash_block3 (
 `ifdef USE_POWER_PINS
     .vdda1(vdda1),
@@ -220,6 +219,50 @@ decred_hash_macro decred_hash_block3 (
       .DATA_AVAILABLE(DATA_AVAILABLE[3]),
       .DATA_FROM_HASH(DATA_FROM_HASH)
   );
+/*
+decred_hash_macro decred_hash_block4 (
+`ifdef USE_POWER_PINS
+    .vdda1(vdda1),
+    .vdda2(vdda2),
+    .vssa1(vssa1),
+    .vssa2(vssa2),
+    .vccd1(vccd1),
+    .vccd2(vccd2),
+    .vssd1(vssd1),
+    .vssd2(vssd2),
+`endif
+      .CLK(m1_clk_local), 
+      .HASH_EN(HASH_EN), 
+      .MACRO_WR_SELECT(MACRO_WR_SELECT[4]),
+      .DATA_TO_HASH(DATA_TO_HASH),
+      .MACRO_RD_SELECT(MACRO_RD_SELECT[4]),
+      .HASH_ADDR(HASH_ADDR),
+      .THREAD_COUNT(THREAD_COUNT[4]),
+      .DATA_AVAILABLE(DATA_AVAILABLE[4]),
+      .DATA_FROM_HASH(DATA_FROM_HASH)
+  );
 
+decred_hash_macro decred_hash_block5 (
+`ifdef USE_POWER_PINS
+    .vdda1(vdda1),
+    .vdda2(vdda2),
+    .vssa1(vssa1),
+    .vssa2(vssa2),
+    .vccd1(vccd1),
+    .vccd2(vccd2),
+    .vssd1(vssd1),
+    .vssd2(vssd2),
+`endif
+      .CLK(m1_clk_local), 
+      .HASH_EN(HASH_EN), 
+      .MACRO_WR_SELECT(MACRO_WR_SELECT[5]),
+      .DATA_TO_HASH(DATA_TO_HASH),
+      .MACRO_RD_SELECT(MACRO_RD_SELECT[5]),
+      .HASH_ADDR(HASH_ADDR),
+      .THREAD_COUNT(THREAD_COUNT[5]),
+      .DATA_AVAILABLE(DATA_AVAILABLE[5]),
+      .DATA_FROM_HASH(DATA_FROM_HASH)
+  );
+*/
 endmodule	// user_project_wrapper
 `default_nettype wire

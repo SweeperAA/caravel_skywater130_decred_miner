@@ -6,7 +6,8 @@
 + DATA_TO_HASH[0] DATA_TO_HASH[1] DATA_TO_HASH[2] DATA_TO_HASH[3] DATA_TO_HASH[4]
 + DATA_TO_HASH[5] DATA_TO_HASH[6] DATA_TO_HASH[7] HASH_ADDR[0] HASH_ADDR[1] HASH_ADDR[2]
 + HASH_ADDR[3] HASH_ADDR[4] HASH_ADDR[5] HASH_EN MACRO_RD_SELECT MACRO_WR_SELECT THREAD_COUNT[0]
-+ THREAD_COUNT[1] THREAD_COUNT[2] THREAD_COUNT[3] VPWR VGND
++ THREAD_COUNT[1] THREAD_COUNT[2] THREAD_COUNT[3] vccd1 vssd1 vccd2 vssd2 vdda1 vssa1
++ vdda2 vssa2
 .ends
 
 * Black-box entry subcircuit for decred_controller abstract view
@@ -21,7 +22,7 @@
 + MACRO_WR_SELECT[1] MACRO_WR_SELECT[2] MACRO_WR_SELECT[3] MISO_fromClient MISO_toHost
 + MOSI_fromHost MOSI_toClient PLL_INPUT S1_CLK_IN S1_CLK_SELECT SCLK_fromHost SCLK_toClient
 + SCSN_fromHost SCSN_toClient THREAD_COUNT[0] THREAD_COUNT[1] THREAD_COUNT[2] THREAD_COUNT[3]
-+ m1_clk_local one zero VPWR VGND
++ m1_clk_local one zero vccd1 vssd1 vccd2 vssd2 vdda1 vssa1 vdda2 vssa2
 .ends
 
 .subckt user_project_wrapper analog_io[0] analog_io[10] analog_io[11] analog_io[12]
@@ -130,10 +131,10 @@ Xdecred_hash_block0 decred_hash_block3/CLK decred_hash_block0/DATA_AVAILABLE dec
 + decred_hash_block3/DATA_TO_HASH[2] decred_hash_block3/DATA_TO_HASH[3] decred_hash_block3/DATA_TO_HASH[4]
 + decred_hash_block3/DATA_TO_HASH[5] decred_hash_block3/DATA_TO_HASH[6] decred_hash_block3/DATA_TO_HASH[7]
 + decred_hash_block3/HASH_ADDR[0] decred_hash_block3/HASH_ADDR[1] decred_hash_block3/HASH_ADDR[2]
-+ decred_hash_block3/HASH_ADDR[3] decred_hash_block3/HASH_ADDR[4] decred_hash_block2/HASH_ADDR[5]
++ decred_hash_block3/HASH_ADDR[3] decred_hash_block3/HASH_ADDR[4] decred_hash_block3/HASH_ADDR[5]
 + decred_hash_block3/HASH_EN decred_hash_block0/MACRO_RD_SELECT decred_hash_block0/MACRO_WR_SELECT
 + decred_hash_block0/THREAD_COUNT[0] decred_hash_block0/THREAD_COUNT[1] decred_hash_block0/THREAD_COUNT[2]
-+ decred_hash_block0/THREAD_COUNT[3] decred_hash_block0/VPWR decred_hash_block0/VGND
++ decred_hash_block0/THREAD_COUNT[3] vccd1 vssd1 vccd2 vssd2 vdda1 vssa1 vdda2 vssa2
 + decred_hash_macro
 Xdecred_hash_block1 decred_hash_block3/CLK decred_hash_block1/DATA_AVAILABLE decred_hash_block3/DATA_FROM_HASH[0]
 + decred_hash_block3/DATA_FROM_HASH[1] decred_hash_block3/DATA_FROM_HASH[2] decred_hash_block3/DATA_FROM_HASH[3]
@@ -142,10 +143,10 @@ Xdecred_hash_block1 decred_hash_block3/CLK decred_hash_block1/DATA_AVAILABLE dec
 + decred_hash_block3/DATA_TO_HASH[2] decred_hash_block3/DATA_TO_HASH[3] decred_hash_block3/DATA_TO_HASH[4]
 + decred_hash_block3/DATA_TO_HASH[5] decred_hash_block3/DATA_TO_HASH[6] decred_hash_block3/DATA_TO_HASH[7]
 + decred_hash_block3/HASH_ADDR[0] decred_hash_block3/HASH_ADDR[1] decred_hash_block3/HASH_ADDR[2]
-+ decred_hash_block3/HASH_ADDR[3] decred_hash_block3/HASH_ADDR[4] decred_hash_block2/HASH_ADDR[5]
++ decred_hash_block3/HASH_ADDR[3] decred_hash_block3/HASH_ADDR[4] decred_hash_block3/HASH_ADDR[5]
 + decred_hash_block3/HASH_EN decred_hash_block1/MACRO_RD_SELECT decred_hash_block1/MACRO_WR_SELECT
 + decred_hash_block1/THREAD_COUNT[0] decred_hash_block1/THREAD_COUNT[1] decred_hash_block1/THREAD_COUNT[2]
-+ decred_hash_block1/THREAD_COUNT[3] decred_hash_block1/VPWR decred_hash_block1/VGND
++ decred_hash_block1/THREAD_COUNT[3] vccd1 vssd1 vccd2 vssd2 vdda1 vssa1 vdda2 vssa2
 + decred_hash_macro
 Xdecred_hash_block2 decred_hash_block3/CLK decred_hash_block2/DATA_AVAILABLE decred_hash_block3/DATA_FROM_HASH[0]
 + decred_hash_block3/DATA_FROM_HASH[1] decred_hash_block3/DATA_FROM_HASH[2] decred_hash_block3/DATA_FROM_HASH[3]
@@ -154,10 +155,10 @@ Xdecred_hash_block2 decred_hash_block3/CLK decred_hash_block2/DATA_AVAILABLE dec
 + decred_hash_block3/DATA_TO_HASH[2] decred_hash_block3/DATA_TO_HASH[3] decred_hash_block3/DATA_TO_HASH[4]
 + decred_hash_block3/DATA_TO_HASH[5] decred_hash_block3/DATA_TO_HASH[6] decred_hash_block3/DATA_TO_HASH[7]
 + decred_hash_block3/HASH_ADDR[0] decred_hash_block3/HASH_ADDR[1] decred_hash_block3/HASH_ADDR[2]
-+ decred_hash_block3/HASH_ADDR[3] decred_hash_block3/HASH_ADDR[4] decred_hash_block2/HASH_ADDR[5]
++ decred_hash_block3/HASH_ADDR[3] decred_hash_block3/HASH_ADDR[4] decred_hash_block3/HASH_ADDR[5]
 + decred_hash_block3/HASH_EN decred_hash_block2/MACRO_RD_SELECT decred_hash_block2/MACRO_WR_SELECT
 + decred_hash_block2/THREAD_COUNT[0] decred_hash_block2/THREAD_COUNT[1] decred_hash_block2/THREAD_COUNT[2]
-+ decred_hash_block2/THREAD_COUNT[3] decred_hash_block2/VPWR decred_hash_block2/VGND
++ decred_hash_block2/THREAD_COUNT[3] vccd1 vssd1 vccd2 vssd2 vdda1 vssa1 vdda2 vssa2
 + decred_hash_macro
 Xdecred_hash_block3 decred_hash_block3/CLK decred_hash_block3/DATA_AVAILABLE decred_hash_block3/DATA_FROM_HASH[0]
 + decred_hash_block3/DATA_FROM_HASH[1] decred_hash_block3/DATA_FROM_HASH[2] decred_hash_block3/DATA_FROM_HASH[3]
@@ -166,10 +167,10 @@ Xdecred_hash_block3 decred_hash_block3/CLK decred_hash_block3/DATA_AVAILABLE dec
 + decred_hash_block3/DATA_TO_HASH[2] decred_hash_block3/DATA_TO_HASH[3] decred_hash_block3/DATA_TO_HASH[4]
 + decred_hash_block3/DATA_TO_HASH[5] decred_hash_block3/DATA_TO_HASH[6] decred_hash_block3/DATA_TO_HASH[7]
 + decred_hash_block3/HASH_ADDR[0] decred_hash_block3/HASH_ADDR[1] decred_hash_block3/HASH_ADDR[2]
-+ decred_hash_block3/HASH_ADDR[3] decred_hash_block3/HASH_ADDR[4] decred_hash_block2/HASH_ADDR[5]
++ decred_hash_block3/HASH_ADDR[3] decred_hash_block3/HASH_ADDR[4] decred_hash_block3/HASH_ADDR[5]
 + decred_hash_block3/HASH_EN decred_hash_block3/MACRO_RD_SELECT decred_hash_block3/MACRO_WR_SELECT
 + decred_hash_block3/THREAD_COUNT[0] decred_hash_block3/THREAD_COUNT[1] decred_hash_block3/THREAD_COUNT[2]
-+ decred_hash_block3/THREAD_COUNT[3] decred_hash_block3/VPWR decred_hash_block3/VGND
++ decred_hash_block3/THREAD_COUNT[3] vccd1 vssd1 vccd2 vssd2 vdda1 vssa1 vdda2 vssa2
 + decred_hash_macro
 Xdecred_controller_block io_out[24] decred_hash_block0/DATA_AVAILABLE decred_hash_block1/DATA_AVAILABLE
 + decred_hash_block2/DATA_AVAILABLE decred_hash_block3/DATA_AVAILABLE decred_hash_block3/DATA_FROM_HASH[0]
@@ -180,7 +181,7 @@ Xdecred_controller_block io_out[24] decred_hash_block0/DATA_AVAILABLE decred_has
 + decred_hash_block3/DATA_TO_HASH[5] decred_hash_block3/DATA_TO_HASH[6] decred_hash_block3/DATA_TO_HASH[7]
 + io_in[8] io_out[22] decred_hash_block3/HASH_ADDR[0] decred_hash_block3/HASH_ADDR[1]
 + decred_hash_block3/HASH_ADDR[2] decred_hash_block3/HASH_ADDR[3] decred_hash_block3/HASH_ADDR[4]
-+ decred_hash_block2/HASH_ADDR[5] decred_hash_block3/HASH_EN io_out[26] io_in[18]
++ decred_hash_block3/HASH_ADDR[5] decred_hash_block3/HASH_EN io_out[26] io_in[18]
 + io_out[23] io_in[17] io_out[27] io_in[10] io_in[11] decred_hash_block0/MACRO_RD_SELECT
 + decred_hash_block1/MACRO_RD_SELECT decred_hash_block2/MACRO_RD_SELECT decred_hash_block3/MACRO_RD_SELECT
 + decred_hash_block0/MACRO_WR_SELECT decred_hash_block1/MACRO_WR_SELECT decred_hash_block2/MACRO_WR_SELECT
@@ -188,6 +189,6 @@ Xdecred_controller_block io_out[24] decred_hash_block0/DATA_AVAILABLE decred_has
 + io_in[12] io_in[13] io_in[9] io_out[20] io_in[14] io_out[19] decred_hash_block0/THREAD_COUNT[0]
 + decred_hash_block0/THREAD_COUNT[1] decred_hash_block0/THREAD_COUNT[2] decred_hash_block0/THREAD_COUNT[3]
 + decred_hash_block3/CLK decred_controller_block/one decred_controller_block/zero
-+ decred_controller_block/VPWR decred_controller_block/VGND decred_controller
++ vccd1 vssd1 vccd2 vssd2 vdda1 vssa1 vdda2 vssa2 decred_controller
 .ends
 

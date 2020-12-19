@@ -50,6 +50,7 @@ set ::env(EXTRA_GDS_FILES) "\
 	$script_dir/../../gds/decred_controller.gds"
 
 set ::env(MAGIC_WRITE_FULL_LEF) 0
+set ::env(MAGIC_GENERATE_LEF) 0
 
 
 # The following is because there are no std cells in the example wrapper project.

@@ -7,7 +7,7 @@ set ::env(VERILOG_FILES) "\
    $script_dir/../../verilog/rtl/defines.v \
    $script_dir/../../verilog/rtl/decred_top/rtl/src/decred_defines.v \
    $script_dir/../../verilog/rtl/decred_top/rtl/src/addressalyzer.v \
-   $script_dir/../../verilog/rtl/decred_top/rtl/src/clock_div.v \
+   $script_dir/../../verilog/rtl/decred_top/rtl/src/clock_div_simple.v \
    $script_dir/../../verilog/rtl/decred_top/rtl/src/decred_controller.v \
    $script_dir/../../verilog/rtl/decred_top/rtl/src/register_bank.v \
    $script_dir/../../verilog/rtl/decred_top/rtl/src/spi_passthrough.v \

@@ -3,4 +3,3 @@
 `define USE_REG_WRITE_TO_HASHMACRO // D-- register write ops to hash macros
 `define USE_VARIABLE_NONCE_OFFSET // D--
 //`define USE_SYSTEM_VERILOG //  -- 
-//`define FULL_CHIP_SIM //  --

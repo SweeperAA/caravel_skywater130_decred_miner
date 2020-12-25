@@ -82,7 +82,7 @@ module decred_controller (
   wire s1_clk_local;
   wire s1_div_output;
 
-  clock_div clock_divBlock (
+  clock_div_simple clock_divBlock (
     .iCLK(m1_clk_local),
     .clk_out(s1_div_output),
     .RST(rst_local_m1)

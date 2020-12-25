@@ -1,0 +1,15 @@
+36 19 c4 73 // midstate
+0c e2 05 81
+72 a5 74 89
+5e 9a 5d 13
+ee c9 a9 dd
+38 f3 cd db
+21 88 97 8a
+ca 07 fb a5
+00 00 00 fc // threshold
+dd bb 06 00 // headerdata
+ed 23 00 00
+4e 21 98 5e
+07 00 00 00
+46 c3 f1 e9 // extranonce
+

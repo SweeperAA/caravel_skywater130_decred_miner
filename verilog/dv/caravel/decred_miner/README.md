@@ -25,3 +25,21 @@ The directory includes a test for the decred_miner
 	* Initializes the decred_controller and executes a pre-determined test case resulting in the expected solution
 	* The test runs for approx 45min on slower machines and requires > 5GB disk space
 
+Both iverilog 11.0 (or greater) and the riscv compiler are required to execute these tests.
+
+To build the riscv compiler:
+
+`git clone --recursive https://github.com/riscv/riscv-gnu-toolchain`
+
+`cd riscv-gnu-toolchain/`
+
+`mkdir build`
+
+`cd build/`
+
+`../configure --prefix=/opt/riscv32 --with-arch=rv32imc --with-abi=ilp32`
+
+`sudo make`
+
+
+To execute test: `make`

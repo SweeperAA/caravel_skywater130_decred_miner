@@ -15,11 +15,28 @@
 
 ## Introduction
 
+The Google SKY130 multi-project wafer free shuttle program provides a harness SoC that surrounds a user project area (Mega Project Area) that is open for individual project implementation. This project implements a Decred miner in the Mega Project Area. In the Mega Project Area is one controller unit and four hashing units. Static timing analysis shows that the units should support a clock frequency of, at least, 50MHz. At 50MHz, four hash units are expected to yield a total of approximately 6 MH/s (megahash per second).
+
+
+<p align="center">
+<b> Caravel Harness SoC Structure </b><br>
+<b></b><br>
+<img src="/doc/ciic_harness.png" width="75%" height="75%"> 
+</p>
+
+
+<p align="center">
+<b> Caravel Harness SoC with Decred Project Implementation </b><br>
+<b></b><br>
+<img src="/doc/caravel_decred.png" width="75%" height="75%"> 
+</p>
+
+
 Decred is a blockchain-based cryptocurrency that utilizes a hybrid Proof-of-Work (PoW) and Proof-of-Stake (PoS) mining system. More about Decred can be found at https://docs.decred.org.
 
 The PoW element of Decred uses the BLAKE-256 (14 round) hashing function and is described in more detail at https://docs.decred.org/research/blake-256-hash-function.
 
-The Skywater 130 Decred Miner project implements a BLAKE-256r14 hash unit that is optimized for the Decred blockchain (i.e., not a generic BLAKE-256r14 hash unit). In addition to the hash unit, the core also includes a SPI unit with addressable register space and a device interrupt; all to be used with a separate controller board. The core is implemented on Skywater’s SKY130 process.
+The Skywater 130 Decred Miner project implements BLAKE-256r14 hash units that are optimized for the Decred blockchain (i.e., not a generic BLAKE-256r14 hash unit). In addition to the hash units, the core also includes a SPI unit with addressable register space and a device interrupt; all to be used with a separate controller board. The core is implemented on Skywater’s SKY130 process.
 
 Several Decred ASICs have been produced in the past at process nodes much smaller than 130nm (some as small as 16nm). This project’s purpose is not intended to compete with the performance per watt of those commercially available units. Rather, this project was intended as a method to learn about the challenges of ASIC development and provide a stepping stone for open-source ASIC development.
 

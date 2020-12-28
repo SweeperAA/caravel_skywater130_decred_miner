@@ -24,8 +24,10 @@ The Google SKY130 multi-project wafer free shuttle program provides a harness So
 <img src="/doc/ciic_harness.png" width="75%" height="75%"> 
 </p>
 
-
 <p align="center">
+<b></b><br>
+<b></b><br>
+<b></b><br>
 <b> Caravel Harness SoC with Decred Project Implementation </b><br>
 <b></b><br>
 <img src="/doc/caravel_decred.png" width="75%" height="75%"> 

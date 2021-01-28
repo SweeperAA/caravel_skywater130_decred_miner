@@ -15,6 +15,7 @@ set ::env(DESIGN_IS_CORE) 0
 
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 1220 1020"
+set ::env(GLB_RT_OBS) "met5 0 0 1.22 1.02"
 
 set ::env(CLOCK_PERIOD) "15.000"
 #default is 50
@@ -41,4 +42,4 @@ set ::env(GLB_RT_MAXLAYER) 5
 #default is 0
 set ::env(PL_BASIC_PLACEMENT) 0
 
-set ::env(ROUTING_CORES) 4
+set ::env(ROUTING_CORES) 6

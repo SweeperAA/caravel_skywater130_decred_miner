@@ -195,7 +195,8 @@ VIAS 5 ;
  ;
 END VIAS
 
-COMPONENTS 4422 ;
+COMPONENTS 4423 ;
+- obs_core_obs_0 obs_core_obs_0 + FIXED ( 0 0 ) N ;
 - _1178_ sky130_fd_sc_hd__buf_2 + PLACED ( 182160 144160 ) N ;
 - _1179_ sky130_fd_sc_hd__buf_2 + PLACED ( 188600 157760 ) FS ;
 - _1180_ sky130_fd_sc_hd__inv_2 + PLACED ( 174800 138720 ) N ;

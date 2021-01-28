@@ -21,6 +21,7 @@ set ::env(DESIGN_IS_CORE) 0
 
 set ::env(FP_SIZING) absolute
 set ::env(DIE_AREA) "0 0 205 205"
+set ::env(GLB_RT_OBS) "met5 0 0 0.205 0.205"
 
 set ::env(CLOCK_PERIOD) "15.000"
 #default is 50

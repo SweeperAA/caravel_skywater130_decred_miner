@@ -1,6 +1,6 @@
 --- 
 project: 
-  description: "A template SoC for Google sponsored Open MPW shuttles for SKY130."
+  description: "Decred implementation of blake256r14 cryptomining SoC for Google sponsored Open MPW shuttles for SKY130."
   foundry: "SkyWater"
   git_url: "https://github.com/SweeperAA/caravel_skywater130_decred_miner.git"
   organization: ""
@@ -15,4 +15,4 @@ project:
   top_level_netlist: "verilog/gl/caravel.v"
   user_level_netlist: "verilog/gl/user_project_wrapper.v"
   version: "1.00"
-  cover_image: "doc/ciic_harness.png"
+  cover_image: "doc/Decred_miner.pdf"

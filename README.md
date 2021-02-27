@@ -44,6 +44,8 @@ Several Decred ASICs have been produced in the past at process nodes much smalle
 
 ## Implementation
 
+<img src="/doc/Decred_Miner.png" width="100%" height="100%"> 
+
 ### Hash Unit Input Data
 
 The Decred blockchain provides a 180-byte header that includes common blockchain fields such as previous block hash, merkle root, timestamp, nonce, and height. It also includes Decred-specific fields such as voting information that works with the PoS portion of Decred. The Decred header specification can be found at https://devdocs.decred.org/developer-guides/block-header-specifications.

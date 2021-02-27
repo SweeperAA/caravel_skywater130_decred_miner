@@ -15,7 +15,7 @@
 
 ## Introduction
 
-The Google SKY130 multi-project wafer free shuttle program provides a harness SoC that surrounds a user project area (Mega Project Area) that is open for individual project implementation. This project implements a Decred miner in the Mega Project Area. In the Mega Project Area is one controller unit and four hashing units. Static timing analysis shows that the units should support a clock frequency of, at least, 50MHz. At 50MHz, four hash units are expected to yield a total of approximately 6 MH/s (megahash per second).
+The Google SKY130 multi-project wafer free shuttle program provides a harness SoC that surrounds a user project area (Mega Project Area) that is open for individual project implementation. This project implements a Decred miner in the Mega Project Area. In the Mega Project Area is one controller unit and four hashing units. Static timing analysis shows that the units support a clock frequency of, at least, 50MHz. At 50MHz, four hash units are expected to yield a total of approximately 6 MH/s (megahash per second).
 
 
 <p align="center">
@@ -68,7 +68,7 @@ It is common for crypto currency mining machine manufacturers to chain several d
 
 ### Register File
 
-A small number of registers are provided at the register_bank level and accessed via the SPI interface.  Read/write operations can operate on different data (see R/W field).  A register window is used to interface with registers at the hash_macro level.
+A small number of registers are provided at the register_bank level and accessed via the SPI interface.  Read/write operations operate on different data (see R/W field).  A register window is used to interface with registers at the hash_macro level.
 ```
 register_bank
 0x00  RW  Macro address
